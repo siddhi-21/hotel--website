@@ -1,0 +1,235 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+/*navbar section*/
+#navbar{
+	display: flex;
+	position: relative;
+}
+
+#navbar img{
+    width: 5.7rem;
+    padding: 0.3rem 1.3rem;}
+   /* animation :movedown 1s linear 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes movedown{
+	0%{
+		transform: translateY(-100px);
+		visibility: visible;
+	}
+	100%{
+		transform: translateY(0px);
+		visibility: visible;
+	}
+}*/
+
+#navbar ul{
+	display: flex;
+    padding: 2rem;
+    margin: 0.5rem;
+  /*  animation :movedown 1s linear 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    visibility: hidden;*/
+}
+#navbar ul li {
+list-style: none;
+}
+#navbar ul li a{
+    text-decoration: none;
+    padding: 9px 30px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+#navbar ul li a:hover{
+	border-radius: 19px;
+   
+    background:#d09901 ;
+    color: black;
+    font-weight: bold;
+    padding: 15px;
+}
+/* home section*/
+#home{
+	display: flex;
+    flex-direction: column;
+    padding: 6px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+	content: "";
+	background:url('img/back.jpg') no-repeat center center/cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.89;
+}
+.heading-part{
+	position: relative;
+    top: 67px;
+    left: -71px;}
+    /*animation :moveright 1s linear 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes moveright{
+	0%{
+		transform: translateX(-100px);
+		visibility: visible;
+	}
+	100%{
+		transform: translateX(0px);
+		visibility: visible;
+	}
+}*/
+#home h1{
+	font-size: 60px;
+    font-family: 'Baloo Paaji 2', cursive;
+    letter-spacing: 2px;
+    color: white;
+    display: block;
+    margin: auto;
+    position: relative;
+    left: -231px;
+    top: -3px;
+}
+#home p{
+	font-size: 19px;
+    line-height: 1.5;
+    left: -223px;
+    position: relative;
+    color: #c7c7c7;
+    top: -9px;
+}
+#home .p{
+	position: relative;
+    left: -110px;
+}
+#home button{
+	padding: 11px 49px;
+    margin: 12px 12px;
+    border-radius: 44px;
+    background:  #d09901;
+    font-size: 18px;
+    font-family: 'Baloo Paaji 2';
+    cursor: pointer;
+}
+#home button:hover{
+	background-color:#eaac01;
+	font-weight: bold;
+	border: 2px solid #ffc834;
+	color: white;
+
+}
+/* Services section*/
+.services-provide{
+	
+	margin: 346px 108px;
+    text-align: center;
+     margin-bottom: 0;
+}
+#Services{
+  font-family: 'Baloo Paaji 2', cursive;
+ display: flex;
+ padding: 83px 0;
+}
+#Services .box{
+    border: 2px solid #d67b7b;
+    padding: 34px;
+    margin: 3px 7px;
+    border-radius: 23px;
+    background: #eadddd;
+    transition: all 1s ease-in-out ;
+    cursor: pointer;
+    
+}
+#Services .box:hover{
+   transform: scale(1.1);
+   border: 2px solid #af5d13;
+}
+ .box img{
+	height: 160px;
+}
+
+.h-first{
+	font-size: 3.4rem;
+	text-align: center;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+.h-secondry{
+	font-size: 2.4rem;
+	text-align: center;
+}
+#client-section{
+ position: relative;
+}
+#client-section::before{
+	content: "";
+	background: url('back1.jpg') no-repeat center center/cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.30;
+}
+.clients{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.clients img{
+	width: 237px;
+	margin: 30px;
+}
+/* Contact Section*/
+#contact{
+  position: relative;
+
+
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url('img/contact.jpg') no-repeat center center/cover;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.contact-form input,.contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border: 2px solid;
+    font-size: 1.1rem;
+}
+.contact-form form{
+    width: 40%
+}
+.contact-form label{
+    font-size: 1.3rem;
+    font-family: 'Baloo Paaji 2', cursive;
+
+}
+/* footer Section*/
+.footer{
+    text-align: center;
+    padding: 12px 20px;
+    background-color: black;
+    color: white;
+}
